@@ -16,7 +16,7 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="Pochette Renaissance">
 
-<!-- Aper�u Twitter/X -->
+<!-- Aperçu Twitter/X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mon album musical Renaissance">
 <meta name="twitter:description" content="Voici mes chansons de Renaissance.">
@@ -35,6 +35,38 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 30px 20px;
+}
+
+.home-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 153, 153, 0.35);
+    background: rgba(255, 153, 153, 0.08);
+    color: #FF9999;
+    text-decoration: none;
+    transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 153, 153, 0.16);
+    border-color: rgba(255, 153, 153, 0.6);
+}
+
+.home-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
 }
 
 img {
@@ -73,6 +105,16 @@ p {
     font-size: 0.9em;
     color: #777;
 }
+
+/* Lien du pied de page : même couleur quel que soit son état */
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+    color: #777;
+}
 </style>
 
 </head>
@@ -81,6 +123,14 @@ p {
 
 <div class="container">
 
+<div class="home-row">
+  <a class="home-btn" href="https://pascal-boulardauger.github.io/cds/" aria-label="Retour à la liste des CD">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3.2 2.5 10.6a1 1 0 0 0 .6 1.8H4V20a1 1 0 0 0 1 1h4.5a1 1 0 0 0 1-1v-5h2.9v5a1 1 0 0 0 1 1H19a1 1 0 0 0 1-1v-7.6h.9a1 1 0 0 0 .6-1.8L12 3.2Z" />
+    </svg>
+  </a>
+</div>
+
 <img src="https://pascal-boulardauger.github.io/cd_renaissance/cd_recto.png" alt="Renaissance" width="70%" height="50%" border="0">
 
 <h1>Mon album musical Renaissance</h1>
@@ -88,7 +138,7 @@ p {
 Bienvenue dans mon album musical Renaissance.
 </p>
 
-<a class="bouton" 
+<a class="bouton"
 href="http://boulard.pascal.free.fr/cd_renaissance/" >
 D&eacute;couvrir l'album
 </a>
@@ -96,7 +146,8 @@ D&eacute;couvrir l'album
 <div class="footer">
 &copy; 2026 Pascal - Tous droits r&eacute;serv&eacute;s<BR>
 Le code source de ce site est prot&eacute;g&eacute; par le droit d'auteur.<BR>
-Toute reproduction ou r&eacute;utilisation est interdite sans autorisation.
+Toute reproduction ou r&eacute;utilisation est interdite sans autorisation.<BR>
+<a href="https://creation-musique.fr" target="_blank" rel="noopener">https://creation-musique.fr</a>
 </div>
 
 </div>
